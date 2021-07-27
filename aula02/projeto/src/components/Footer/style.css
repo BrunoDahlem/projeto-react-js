@@ -1,0 +1,25 @@
+.footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5px 20px;
+    background: #c4c4c4;
+    height: 70px;
+}
+.footerAbs {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5px 20px;
+    background: #c4c4c4;
+    height: 70px;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+@media (max-width:991px) {
+    .footerAbs {
+        position: static;
+    }
+}

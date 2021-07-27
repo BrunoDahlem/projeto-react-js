@@ -1,0 +1,19 @@
+.container-header {
+    background: #ccc;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    }
+    
+    .estilo-tabela {
+        display: flex;
+        justify-content: space-evenly;
+        width: 50%;
+        list-style: none;
+    }
+    
+    .estilo-tabela li {
+        padding: 5px;
+    }

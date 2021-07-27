@@ -1,0 +1,13 @@
+.container__busca {
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#buscar {
+    padding: 10px;
+    border-radius: 10px;
+    background: #c4c4c4;
+    border: 2px solid #000;
+    color: #000;
+}

@@ -1,0 +1,43 @@
+.listaCards {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+.pre__card {
+    width: 33.333%;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 30px;
+}
+@media (max-width:991px) {
+    .pre__card {
+        width: 100%;
+    }
+}
+.card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: calc(50% + 40px);
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 5px 5px 16px #000;
+    border: 2px solid #000;
+    transition: box-shadow .5s, transform .5s;
+}
+.card:hover {
+    transform: scale(1.05);
+    box-shadow: 16px 20px 20px #000;
+}
+.card__imagem {
+    width: 100%;
+    border: 2px solid #000;
+    border-radius: 10px;
+}
+.card__imagem img {
+    border-radius: 8px;
+}
+.card__info {
+    width: 100%;
+    margin: 20px 0;
+}

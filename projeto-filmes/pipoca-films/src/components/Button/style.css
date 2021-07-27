@@ -1,0 +1,20 @@
+.btn {
+    border: none;
+    background: #c4c4c4;
+    border-radius: 10px;
+    font-weight: bold;
+    cursor: pointer;
+    border: 2px solid #000;
+}
+
+#btn__busca {
+    margin-left: 20px;
+    padding: 10px;
+}
+#btn__card {
+    padding: 10px;
+    width: 50%;
+}
+.btn:hover {
+    box-shadow: inset 3px 3px 10px #000;
+}

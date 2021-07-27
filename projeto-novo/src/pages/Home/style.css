@@ -1,0 +1,7 @@
+.container__busca {
+    height: 100px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 0 50px;
+}

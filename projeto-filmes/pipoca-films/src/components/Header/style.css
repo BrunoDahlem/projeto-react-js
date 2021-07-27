@@ -1,0 +1,75 @@
+.header {
+    background: var(--bgHeaderFooter);
+    color: var(--fontHeaderFooter);;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5px 20px;
+    font-weight: bold;
+}
+.logo {
+    width: 250px;
+}
+.img__responsive {
+    width: 100%;
+    height: 100%;
+}
+.menu {
+    width: 30%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+@media (max-width:991px) {
+    .menu {
+        width: 80%;
+    }
+}
+.menu__lista {
+    display: flex;
+    justify-content: space-evenly;
+    width: 100%;
+}
+.menu__lista__item {
+    cursor: pointer;
+    transition: box-shadow .5s, border .5s;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.menu__lista__item a {
+    color: var(--fontHeaderFooter);
+    padding: 5px 10px;
+    border-radius: 10px;
+    border: 2px solid transparent;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    transition: .5s;
+}
+.menu__lista__item a:active {
+    box-shadow: inset 3px 3px 10px #000;
+    border: 2px solid #000;
+}
+.menu__lista__item:after {
+    content: "";
+    margin: 5px 0 0 0;
+    background: transparent;
+    height: 2px;
+    width: 0;
+    transition: .5s;
+}
+.menu__lista__item:not(:last-child):hover:after {
+    background: red;
+    width: 70%;
+}
+.btn__login a {
+    background: crimson;
+    transition: transform .5s;
+}
+.btn__login a:hover {
+    transform: scale(1.05);
+}
