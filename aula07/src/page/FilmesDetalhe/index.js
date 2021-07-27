@@ -1,13 +1,13 @@
-import React, { useEffect, useState } from 'react';
+import React, { useEffect, useState, useContext } from 'react';
 import { useParams } from 'react-router-dom';
 import CardDetail from '../../components/CardDetail';
 import GetDetailMovie from '../../service/Movie/GetDetailMovie';
+import { GlobalContext } from '../../context/NameContext';
 
-// import { Container } from './styles';
-
-const FilmesDetalhe = ({setFooter}) => {
+const FilmesDetalhe = () => {
   const [data,setData]= useState([]);
   const params = useParams();
+  const {setFooter} = useContext(GlobalContext);
 
   useEffect(()=>{
     const getDetail = async () => {

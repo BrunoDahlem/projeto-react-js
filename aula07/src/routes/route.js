@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React from 'react';
 import {
     BrowserRouter as Router,
     Switch,
@@ -15,30 +15,27 @@ import FilmesDetalhe from '../page/FilmesDetalhe';
 import Footer from '../components/Footer'
 
 const Routes = () => {
-
-    const[footer,setFooter] = useState(true);
-
     return (
         <Router>
             <Header links={Menus} logo={Logo} alt="Pipoca filmes"/>
             <Switch>
                 <Route exact path="/">
-                    <Filmes setFooter={setFooter}/>
+                    <Filmes/>
                 </Route>
                 <Route exact path="/top-filmes">
-                    <TopMovies setFooter={setFooter}/>
+                    <TopMovies/>
                 </Route>
                 <Route exact path="/sobre">
-                    <Sobre setFooter={setFooter}/>
+                    <Sobre/>
                 </Route>
                 <Route exact path="/login">
-                    <Login setFooter={setFooter}/>
+                    <Login/>
                 </Route>
                 <Route exact path="/filmes/:id">
-                    <FilmesDetalhe setFooter={setFooter}/>
+                    <FilmesDetalhe/>
                 </Route>
             </Switch>
-            <Footer links={Menus} logo={Logo} alt="Pipoca filmes" abs={footer}/>
+            <Footer links={Menus} logo={Logo} alt="Pipoca filmes"/>
         </Router>
     );
 }

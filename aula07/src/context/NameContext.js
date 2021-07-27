@@ -4,8 +4,9 @@ export const GlobalContext = createContext();
 
 const NameContext = ({children}) => {
     const [nomeFilme, setNomeFilme] = useState('');
+    const[footer,setFooter] = useState(true);
     return (
-    <GlobalContext.Provider value={{nomeFilme,setNomeFilme}}>
+    <GlobalContext.Provider value={{nomeFilme,setNomeFilme,footer,setFooter}}>
         {children}
     </GlobalContext.Provider>
     )

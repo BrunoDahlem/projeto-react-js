@@ -5,13 +5,13 @@ import Lupa from '../../assets/lupa.png';
 import Card from '../../components/Card';
 import { GlobalContext } from '../../context/NameContext';
 
-const Filmes = ({setFooter}) => {
+const Filmes = () => {
 
     const[name,setName] = useState('');
     const[data,setData] = useState([]);
     const[paginas,setPaginas] = useState([]);
     const[pageActive,setPageActive] = useState(1)
-    const {setNomeFilme} = useContext(GlobalContext);
+    const {setNomeFilme,setFooter} = useContext(GlobalContext);
     
 
 

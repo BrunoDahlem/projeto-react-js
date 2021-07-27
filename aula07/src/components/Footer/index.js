@@ -3,11 +3,11 @@ import { Container,Container__links,Container__img,Links} from './styled';
 import { NavLink } from 'react-router-dom';
 import { GlobalContext } from '../../context/NameContext';
 
-const Footer = ({logo,alt,links,abs}) => {
-    const {nomeFilme} = useContext(GlobalContext);
+const Footer = ({logo,alt,links}) => {
+    const {nomeFilme,footer} = useContext(GlobalContext);
 
     return (
-    <Container abs={abs}>
+    <Container abs={footer}>
         <Container__img>
             <NavLink exact to="/"><img src={logo} alt={alt}/></NavLink>
         </Container__img>
